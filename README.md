@@ -2,11 +2,13 @@
 
 Um companheiro digital para o seu terminal: um personagem animado, colorido e reativo que vive ao lado do seu CLI.
 
+> **Status:** em construção. A estrutura do projeto e as ferramentas já estão configuradas; o código do companion está sendo desenvolvido.
+
 ## Escopo
 
 - Personagem em ASCII/Unicode com **ciclos de animação** por estado (`idle`, `happy`, ...)
 - **Cores** via ANSI no terminal
-- **Reativo ao usuário**: o estado muda conforme eventos (hoje, teclado)
+- **Reativo ao usuário**: o estado muda conforme eventos (a começar pelo teclado)
 - **Máquina de estados** simples para controlar as transições
 
 ### Ideias para as próximas etapas
@@ -42,7 +44,7 @@ npm run typecheck   # checagem de tipos (tsc, sem gerar arquivos)
 
 > O `npm run dev` precisa de um terminal interativo (o Ink usa *raw mode* para ler o teclado).
 
-## Estrutura
+## Estrutura planejada
 
 ```
 src/
@@ -51,6 +53,7 @@ src/
   companion/
     sprites.ts           # frames e cores por estado (só dados)
     Companion.tsx        # componente que anima o personagem
+    machine.ts           # estados e transições (lógica pura)
 ```
 
 ## Contribuindo
