@@ -1,0 +1,35 @@
+{
+  "name": "cli-companion",
+  "version": "0.1.0",
+  "description": "A digital companion for your terminal.",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "tsx src/index.tsx",
+    "typecheck": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/M-Machado1/CLI-Companion.git"
+  },
+  "bugs": {
+    "url": "https://github.com/M-Machado1/CLI-Companion/issues"
+  },
+  "homepage": "https://github.com/M-Machado1/CLI-Companion#readme",
+  "dependencies": {
+    "ink": "^8.0.0",
+    "react": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
+  }
+}
