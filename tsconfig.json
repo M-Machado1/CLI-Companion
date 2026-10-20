@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    // Ambiente
+    "module": "nodenext",
+    "target": "esnext",
+    "lib": [
+      "esnext"
+    ],
+    "types": [
+      "node"
+    ],
+    "jsx": "react-jsx",
+    // Só checagem de tipos; quem executa é tsx/Bun
+    "noEmit": true,
+    // Rigor
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noImplicitOverride": true,
+    // Módulos
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true
+  },
+  "include": [
+    "src"
+  ]
+}
